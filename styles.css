@@ -4,6 +4,7 @@
   --cg-blue: rgb(36, 94, 255);
   --cg-grey: rgb(243, 243, 243);
   --cg-white: rgb(255, 255, 255);
+  --cg-light-blue: rgb(137, 202, 242);
 }
 
 html {
@@ -65,12 +66,11 @@ body {
 }
 
 .navbar a:hover {
-  color: var(--cg-blue);
-  text-decoration: underline;
+  color: var(--cg-light-blue);
 }
 
 .navbar a:active {
-  color: var(--cg-blue);
+  color:var(--cg-light-blue);
 }
 
 .logo a {
@@ -218,7 +218,7 @@ main {
 }
 
 .button:hover {
-  background-color: var(--cg-blue);
+  background-color: var(--cg-light-blue);
 }
 
 .resume h2 {
@@ -258,7 +258,6 @@ form {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: var(--cg-black); */
   background-color: rgb(72, 112, 144);
   color: var(--cg-white);
   position: absolute;
@@ -267,20 +266,22 @@ form {
   height: 2.5rem;
 }
 
-/* Style the blog post */
+/* CSS for blog posts */
 .blog-post {
-  display: flex; /* Use flexbox for layout */
+  display: flex;
   background-color: #fff;
   padding: 20px;
   margin: 20px auto;
   border: 1px solid #ddd;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  align-items: center;
 }
 
 .blog-post:hover{
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
+
 .post-title {
   font-size: 24px;
   margin-bottom: 10px;
